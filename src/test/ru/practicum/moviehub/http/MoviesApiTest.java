@@ -162,7 +162,8 @@ public class MoviesApiTest {
         String body = resp.body();
 
         assertEquals(415, resp.statusCode());
-        assertTrue(body.contains("\"error\":\"Unsupported Media Type\""));    }
+        assertTrue(body.contains("\"error\":\"Unsupported Media Type\""));
+    }
 
     @Test
     @DisplayName("POST /movies — возвращает ошибку при некорректном JSON")
