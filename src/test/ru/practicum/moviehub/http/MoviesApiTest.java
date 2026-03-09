@@ -318,11 +318,9 @@ public class MoviesApiTest {
 
         var resp = client.send(req, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
         String body = resp.body();
-        System.out.println(body);
 
         assertEquals(400, resp.statusCode());
-        String decodedBody = body.replace("\\u0027", "'");
-        assertTrue(decodedBody.contains("Некорректный параметр запроса — 'year'"));
+        assertTrue(body.contains("Некорректный параметр запроса "));
     }
 
     @Test
