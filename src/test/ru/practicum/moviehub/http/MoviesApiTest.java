@@ -72,7 +72,12 @@ public class MoviesApiTest {
     @Test
     @DisplayName("POST /movies — добавляет фильм при корректных данных")
     void postMovie_valid_returns201() throws Exception {
-        String json = "{\"title\": \"Matrix\", \"year\": 1999}";
+        String json = """
+                {
+                  "title": "Matrix",
+                  "year": 1999
+                }
+                """;
 
         var req = HttpRequest.newBuilder()
                 .uri(URI.create(BASE + "/movies"))
@@ -92,7 +97,12 @@ public class MoviesApiTest {
     @Test
     @DisplayName("POST /movies — возвращает 422 при некорректных данных")
     void postMovie_emptyTitle_returns422() throws Exception {
-        String json = "{\"title\": \"\", \"year\": 2010}";
+        String json = """
+                {
+                  "title": "",
+                  "year": 2010
+                }
+                """;
 
         var req = HttpRequest.newBuilder()
                 .uri(URI.create(BASE + "/movies"))
@@ -112,7 +122,12 @@ public class MoviesApiTest {
     @DisplayName("POST /movies — возвращает ошибку при слишком длинном title")
     void postMovie_longTitle_returns422() throws Exception {
         String longTitle = "A".repeat(101);
-        String json = "{\"title\": \"" + longTitle + "\", \"year\": 2010}";
+        String json = """
+                {
+                  "title": "%s",
+                  "year": 2010
+                }
+                """.formatted(longTitle);
 
         var req = HttpRequest.newBuilder()
                 .uri(URI.create(BASE + "/movies"))
@@ -131,7 +146,12 @@ public class MoviesApiTest {
     @Test
     @DisplayName("POST /movies — возвращает ошибку при неверном year")
     void postMovie_invalidYear_returns422() throws Exception {
-        String json = "{\"title\": \"Matrix\", \"year\": 1000}";
+        String json = """
+                {
+                  "title": "Matrix",
+                  "year": 1000
+                }
+                """;
 
         var req = HttpRequest.newBuilder()
                 .uri(URI.create(BASE + "/movies"))
@@ -150,7 +170,12 @@ public class MoviesApiTest {
     @Test
     @DisplayName("POST /movies — возвращает ошибку при неправильном Content-Type")
     void postMovie_invalidContentType_returns415() throws Exception {
-        String json = "{\"title\": \"Matrix\", \"year\": 2010}";
+        String json = """
+                {
+                  "title": "Matrix",
+                  "year": 2010
+                }
+                """;
 
         var req = HttpRequest.newBuilder()
                 .uri(URI.create(BASE + "/movies"))
@@ -168,7 +193,12 @@ public class MoviesApiTest {
     @Test
     @DisplayName("POST /movies — возвращает ошибку при некорректном JSON")
     void postMovie_invalidJson_returns400() throws Exception {
-        String json = "{title Matrix, year: 2010}";
+        String json = """
+                {
+                  "title" "Matrix",
+                  "year": 2010
+                }
+                """;
 
         var req = HttpRequest.newBuilder()
                 .uri(URI.create(BASE + "/movies"))
@@ -371,7 +401,13 @@ public class MoviesApiTest {
     }
 
     private int addMovieAndGetId(String title, int year) throws Exception {
-        String json = String.format("{\"title\": \"%s\", \"year\": %d}", title, year);
+        String json = String.format("""
+                {
+                  "title": "%s",
+                  "year": %d
+                }
+                """, title, year);
+
         var req = HttpRequest.newBuilder()
                 .uri(URI.create(BASE + "/movies"))
                 .POST(HttpRequest.BodyPublishers.ofString(json, StandardCharsets.UTF_8))
@@ -383,7 +419,13 @@ public class MoviesApiTest {
     }
 
     private void addMovie(String title, int year) throws Exception {
-        String json = String.format("{\"title\": \"%s\", \"year\": %d}", title, year);
+        String json = String.format("""
+                {
+                  "title": "%s",
+                  "year": %d
+                }
+                """, title, year);
+
         var req = HttpRequest.newBuilder()
                 .uri(URI.create(BASE + "/movies"))
                 .POST(HttpRequest.BodyPublishers.ofString(json, StandardCharsets.UTF_8))

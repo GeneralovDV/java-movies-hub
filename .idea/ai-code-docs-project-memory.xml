@@ -18,8 +18,8 @@
             <entry key="tags" value="entity,summary" />
           </map>
         </option>
-        <option name="createdAt" value="1773073645338" />
-        <option name="updatedAt" value="1773073645338" />
+        <option name="createdAt" value="1773074233454" />
+        <option name="updatedAt" value="1773074233454" />
       </Item>
       <Item>
         <option name="id" value="_46tgrr55Y5NV7OKAxqMkbrvYAA" />
@@ -67,7 +67,7 @@
         <option name="kind" value="ENTITY_SUMMARY" />
         <option name="key" value="entity:ru.practicum.moviehub.http.MoviesHandler" />
         <option name="title" value="Auto summary: ru.practicum.moviehub.http.MoviesHandler" />
-        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.google.gson.Gson;&#10;import com.google.gson.JsonElement;&#10;import com.google.gson.JsonSyntaxException;&#10;import com.sun.net.httpserver.HttpExchange;&#10;import com.sun.net.httpserver.HttpHandler;&#10;import ru.practicum.moviehub.api.ErrorResponse;&#10;import ru.practicum.moviehub.model.Movie;&#10;import ru.practicum.moviehub.store.MoviesStore;&#10;&#10;import java.io.BufferedReader;&#10;import java.io.IOException;&#10;import java.io.InputStreamReader;&#10;import java.nio.charset.StandardCharsets;&#10;import java.time.Year;&#10;import java.util.ArrayList;&#10;import java.util.Collections;&#10;import java.util.List;&#10;import java.util.Optional;&#10;&#10;public class MoviesHandler extends BaseHttpHandler implements HttpHandler {&#10;    private final MoviesStore store;&#10;    private final Gson gson = new Gson();&#10;&#10;    public MoviesHandler(MoviesStore store) {&#10;        this.store = store;&#10;    }&#10;&#10;    @Override&#10;    public void handle(HttpExchange ex) throws IOException {&#10;        String method = ex.getRequestMethod();&#10;        String path = ex.getRequestURI().getPath();&#10;&#10;        if (method.equalsIgnoreCase(&quot;GET&quot;)) {&#10;            handleGet(ex);&#10;            return;&#10;        }&#10;        if (method.equalsIgnoreCase(&quot;POST&quot;)) {&#10;            handlePost(ex);&#10;```" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.google.gson.Gson;&#10;import com.google.gson.JsonElement;&#10;import com.google.gson.JsonSyntaxException;&#10;import com.sun.net.httpserver.HttpExchange;&#10;import com.sun.net.httpserver.HttpHandler;&#10;import ru.practicum.moviehub.model.Movie;&#10;import ru.practicum.moviehub.store.MoviesStore;&#10;&#10;import java.io.BufferedReader;&#10;import java.io.IOException;&#10;import java.io.InputStreamReader;&#10;import java.nio.charset.StandardCharsets;&#10;import java.time.Year;&#10;import java.util.ArrayList;&#10;import java.util.Collections;&#10;import java.util.List;&#10;import java.util.Optional;&#10;&#10;public class MoviesHandler extends BaseHttpHandler implements HttpHandler {&#10;    private final MoviesStore store;&#10;    private final Gson gson = new Gson();&#10;&#10;    public MoviesHandler(MoviesStore store) {&#10;        this.store = store;&#10;    }&#10;&#10;    @Override&#10;    public void handle(HttpExchange ex) throws IOException {&#10;        String method = ex.getRequestMethod();&#10;        String path = ex.getRequestURI().getPath();&#10;&#10;        if (method.equalsIgnoreCase(&quot;GET&quot;)) {&#10;            handleGet(ex);&#10;            return;&#10;        }&#10;        if (method.equalsIgnoreCase(&quot;POST&quot;)) {&#10;            handlePost(ex);&#10;            return;&#10;```" />
         <option name="slug" value="entity:ru.practicum.moviehub.http.MoviesHandler" />
         <option name="meta">
           <map>
@@ -75,8 +75,8 @@
             <entry key="tags" value="entity,summary" />
           </map>
         </option>
-        <option name="createdAt" value="1773073368738" />
-        <option name="updatedAt" value="1773073368738" />
+        <option name="createdAt" value="1773073763109" />
+        <option name="updatedAt" value="1773073763109" />
       </Item>
       <Item>
         <option name="id" value="Fc2IWwZweeSp4ZdXD8nKXtLCBPU" />
@@ -143,7 +143,7 @@
         <option name="kind" value="ENTITY_SUMMARY" />
         <option name="key" value="entity:ru.practicum.moviehub.model.Movie" />
         <option name="title" value="Auto summary: ru.practicum.moviehub.model.Movie" />
-        <option name="text" value="```&#10;package ru.practicum.moviehub.model;&#10;&#10;import java.util.Objects;&#10;&#10;public class Movie {&#10;    private int id;&#10;    private String title;&#10;    private int year;&#10;    &#10;    public void setId(int id) { this.id = id; }&#10;&#10;    public String getTitle() { return title; }&#10;&#10;    public int getYear() { return year; }&#10;&#10;    @Override&#10;    public boolean equals(Object o) {&#10;        if (this == o) return true;&#10;        if (o == null || getClass() != o.getClass()) return false;&#10;        Movie movie = (Movie) o;&#10;        return id == movie.id;&#10;    }&#10;&#10;    @Override&#10;    public int hashCode() {&#10;        return Objects.hash(id);&#10;    }&#10;}&#10;```" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.model;&#10;&#10;import java.util.Objects;&#10;&#10;public class Movie {&#10;    private int id;&#10;    private String title;&#10;    private int year;&#10;&#10;    public void setId(int id) {&#10;        this.id = id;&#10;    }&#10;&#10;    public String getTitle() {&#10;        return title;&#10;    }&#10;&#10;    public int getYear() {&#10;        return year;&#10;    }&#10;&#10;    @Override&#10;    public boolean equals(Object o) {&#10;        if (this == o) return true;&#10;        if (o == null || getClass() != o.getClass()) return false;&#10;        Movie movie = (Movie) o;&#10;        return id == movie.id;&#10;    }&#10;&#10;    @Override&#10;    public int hashCode() {&#10;        return Objects.hash(id);&#10;    }&#10;}&#10;```" />
         <option name="slug" value="entity:ru.practicum.moviehub.model.Movie" />
         <option name="meta">
           <map>
@@ -151,8 +151,8 @@
             <entry key="tags" value="entity,summary" />
           </map>
         </option>
-        <option name="createdAt" value="1773073695454" />
-        <option name="updatedAt" value="1773073695454" />
+        <option name="createdAt" value="1773073772048" />
+        <option name="updatedAt" value="1773073772048" />
       </Item>
       <Item>
         <option name="id" value="3dDZgrEcA30t2ILGmaSDwsM7Wl0" />
@@ -162,7 +162,7 @@
         <option name="kind" value="ENTITY_SUMMARY" />
         <option name="key" value="entity:ru.practicum.moviehub.store.MoviesStore" />
         <option name="title" value="Auto summary: ru.practicum.moviehub.store.MoviesStore" />
-        <option name="text" value="```&#10;package ru.practicum.moviehub.store;&#10;&#10;import ru.practicum.moviehub.model.Movie;&#10;&#10;import java.util.*;&#10;import java.util.concurrent.atomic.AtomicInteger;&#10;&#10;public class MoviesStore {&#10;    private final Map&lt;Integer, Movie&gt; movies = new HashMap&lt;&gt;();&#10;    private final AtomicInteger idCounter = new AtomicInteger(1);&#10;&#10;    public List&lt;Movie&gt; getAllMovies() {&#10;        return new ArrayList&lt;&gt;(movies.values());&#10;    }&#10;&#10;    public Optional&lt;Movie&gt; getMovieById(int id) {&#10;        return Optional.ofNullable(movies.get(id));&#10;    }&#10;&#10;    public List&lt;Movie&gt; getMoviesByYear(int year) {&#10;        List&lt;Movie&gt; result = new ArrayList&lt;&gt;();&#10;        for (Movie m : movies.values()) {&#10;            if (m.getYear() == year) {&#10;                result.add(m);&#10;            }&#10;        }&#10;        return result;&#10;    }&#10;&#10;    public Movie addMovie(Movie movie) {&#10;        int id = idCounter.getAndIncrement();&#10;        movie.setId(id);&#10;        movies.put(id, movie);&#10;        return movie;&#10;    }&#10;&#10;    public boolean removeMovie(int id) {&#10;        return movies.remove(id) != null;&#10;    }&#10;&#10;```" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.store;&#10;&#10;import ru.practicum.moviehub.model.Movie;&#10;&#10;import java.util.ArrayList;&#10;import java.util.HashMap;&#10;import java.util.List;&#10;import java.util.Map;&#10;import java.util.Optional;&#10;import java.util.concurrent.atomic.AtomicInteger;&#10;&#10;public class MoviesStore {&#10;    private final Map&lt;Integer, Movie&gt; movies = new HashMap&lt;&gt;();&#10;    private final AtomicInteger idCounter = new AtomicInteger(1);&#10;&#10;    public List&lt;Movie&gt; getAllMovies() {&#10;        return new ArrayList&lt;&gt;(movies.values());&#10;    }&#10;&#10;    public Optional&lt;Movie&gt; getMovieById(int id) {&#10;        return Optional.ofNullable(movies.get(id));&#10;    }&#10;&#10;    public List&lt;Movie&gt; getMoviesByYear(int year) {&#10;        List&lt;Movie&gt; result = new ArrayList&lt;&gt;();&#10;        for (Movie m : movies.values()) {&#10;            if (m.getYear() == year) {&#10;                result.add(m);&#10;            }&#10;        }&#10;        return result;&#10;    }&#10;&#10;    public Movie addMovie(Movie movie) {&#10;        int id = idCounter.getAndIncrement();&#10;        movie.setId(id);&#10;        movies.put(id, movie);&#10;        return movie;&#10;    }&#10;&#10;```" />
         <option name="slug" value="entity:ru.practicum.moviehub.store.MoviesStore" />
         <option name="meta">
           <map>
@@ -170,8 +170,8 @@
             <entry key="tags" value="entity,summary" />
           </map>
         </option>
-        <option name="createdAt" value="1773066957747" />
-        <option name="updatedAt" value="1773066957747" />
+        <option name="createdAt" value="1773073782453" />
+        <option name="updatedAt" value="1773073782453" />
       </Item>
       <Item>
         <option name="id" value="VFo3dLvB7Av-gZxwwfJPXH0aowY" />
@@ -200,7 +200,7 @@
         <option name="kind" value="ENTITY_SUMMARY" />
         <option name="key" value="entity:ru.practicum.moviehub.api.ErrorResponse" />
         <option name="title" value="Auto summary: ru.practicum.moviehub.api.ErrorResponse" />
-        <option name="text" value="```&#10;package ru.practicum.moviehub.api;&#10;&#10;import java.util.Collections;&#10;import java.util.List;&#10;&#10;public class ErrorResponse {&#10;    private String error;&#10;    private List&lt;String&gt; details;&#10;&#10;    public ErrorResponse(String error, List&lt;String&gt; details) {&#10;        this.error = error;&#10;        this.details = details;&#10;    }&#10;&#10;    public ErrorResponse(String error) {&#10;        this.error = error;&#10;        this.details = Collections.emptyList();&#10;    }&#10;&#10;    public String getError() { return error; }&#10;    public List&lt;String&gt; getDetails() { return details; }&#10;}&#10;```" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.api;&#10;&#10;import java.util.List;&#10;&#10;public class ErrorResponse {&#10;    private String error;&#10;    private List&lt;String&gt; details;&#10;&#10;    public ErrorResponse(String error, List&lt;String&gt; details) {&#10;        this.error = error;&#10;        this.details = details;&#10;    }&#10;}&#10;```" />
         <option name="slug" value="entity:ru.practicum.moviehub.api.ErrorResponse" />
         <option name="meta">
           <map>
@@ -208,8 +208,27 @@
             <entry key="tags" value="entity,summary" />
           </map>
         </option>
-        <option name="createdAt" value="1773066993058" />
-        <option name="updatedAt" value="1773066993058" />
+        <option name="createdAt" value="1773073753159" />
+        <option name="updatedAt" value="1773073753159" />
+      </Item>
+      <Item>
+        <option name="id" value="_o4_GSPZI1CkwbZ3ipBvC_o8WtE" />
+        <option name="userId" value="d.v.generalov" />
+        <option name="projectId" value="fe1a3b50" />
+        <option name="scope" value="ENTITY" />
+        <option name="kind" value="ENTITY_SUMMARY" />
+        <option name="key" value="entity:ru.practicum.moviehub.http.ListOfMoviesTypeToken" />
+        <option name="title" value="Auto summary: ru.practicum.moviehub.http.ListOfMoviesTypeToken" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.google.gson.reflect.TypeToken;&#10;import ru.practicum.moviehub.model.Movie;&#10;&#10;import java.util.List;&#10;&#10;public class ListOfMoviesTypeToken extends TypeToken&lt;List&lt;Movie&gt;&gt; {&#10;}&#10;```" />
+        <option name="slug" value="entity:ru.practicum.moviehub.http.ListOfMoviesTypeToken" />
+        <option name="meta">
+          <map>
+            <entry key="fqId" value="ru.practicum.moviehub.http.ListOfMoviesTypeToken" />
+            <entry key="tags" value="entity,summary" />
+          </map>
+        </option>
+        <option name="createdAt" value="1773074081783" />
+        <option name="updatedAt" value="1773074081783" />
       </Item>
     </items>
   </component>
