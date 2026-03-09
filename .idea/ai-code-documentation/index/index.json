@@ -1,0 +1,184 @@
+{
+  "version" : 1,
+  "files" : {
+    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/README.md" : [ {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/README.md:1-2",
+      "title" : "java-movies-hub",
+      "content" : "Repository for homework project.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/README.md",
+      "startLine" : 1,
+      "endLine" : 2,
+      "symbolFqn" : null,
+      "tags" : [ "markdown", "doc" ],
+      "lastEditMillis" : 1773057738496
+    } ],
+    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java" : [ {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java:6-12",
+      "title" : "ru.practicum.moviehub.MovieHubApp",
+      "content" : "Класс MovieHubApp.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java",
+      "startLine" : 6,
+      "endLine" : 12,
+      "symbolFqn" : "ru.practicum.moviehub.MovieHubApp",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738508
+    }, {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java:7-11",
+      "title" : "ru.practicum.moviehub.MovieHubApp#main",
+      "content" : "Метод main ((String[] args)). Возвращает void.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java",
+      "startLine" : 7,
+      "endLine" : 11,
+      "symbolFqn" : "ru.practicum.moviehub.MovieHubApp#main",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738508
+    }, {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java:INV:7",
+      "title" : "Ключевые вызовы: main(String[])",
+      "content" : "- `java.lang.Runtime#getRuntime()`\n\n- `java.lang.Runtime#addShutdownHook(Thread)`\n",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java",
+      "startLine" : 7,
+      "endLine" : 11,
+      "symbolFqn" : "ru.practicum.moviehub.MovieHubApp#main(String[])",
+      "tags" : [ "inline", "invocation" ],
+      "lastEditMillis" : 1773057738508
+    } ],
+    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml" : [ {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml:1-1",
+      "title" : "yaml:name",
+      "content" : "Java Tests",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml",
+      "startLine" : 1,
+      "endLine" : 1,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:name", "config" ],
+      "lastEditMillis" : 1773057738494
+    }, {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml:3-4",
+      "title" : "yaml:on",
+      "content" : "pull_request:",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml",
+      "startLine" : 3,
+      "endLine" : 4,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:on", "config" ],
+      "lastEditMillis" : 1773057738494
+    }, {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml:6-7",
+      "title" : "yaml:jobs",
+      "content" : "build: uses: yandex-praktikum/java-movies-hub/.github/workflows/api-tests.yml@ci",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml",
+      "startLine" : 6,
+      "endLine" : 7,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:jobs", "config" ],
+      "lastEditMillis" : 1773057738494
+    } ],
+    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/api/ErrorResponse.java" : [ {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/api/ErrorResponse.java:3-5",
+      "title" : "ru.practicum.moviehub.api.ErrorResponse",
+      "content" : "Класс ErrorResponse.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/api/ErrorResponse.java",
+      "startLine" : 3,
+      "endLine" : 5,
+      "symbolFqn" : "ru.practicum.moviehub.api.ErrorResponse",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738508
+    } ],
+    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/http/BaseHttpHandler.java" : [ {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/http/BaseHttpHandler.java:5-7",
+      "title" : "ru.practicum.moviehub.http.BaseHttpHandler",
+      "content" : "Класс BaseHttpHandler.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/http/BaseHttpHandler.java",
+      "startLine" : 5,
+      "endLine" : 7,
+      "symbolFqn" : "ru.practicum.moviehub.http.BaseHttpHandler",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738508
+    } ],
+    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/MoviesApiTest.java" : [ {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/MoviesApiTest.java:8-29",
+      "title" : "ru.practicum.moviehub.http.MoviesApiTest",
+      "content" : "Класс MoviesApiTest.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/MoviesApiTest.java",
+      "startLine" : 8,
+      "endLine" : 29,
+      "symbolFqn" : "ru.practicum.moviehub.http.MoviesApiTest",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738510
+    }, {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/MoviesApiTest.java:10-13",
+      "title" : "ru.practicum.moviehub.http.MoviesApiTest#beforeAll",
+      "content" : "Метод beforeAll (()). Возвращает void.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/MoviesApiTest.java",
+      "startLine" : 10,
+      "endLine" : 13,
+      "symbolFqn" : "ru.practicum.moviehub.http.MoviesApiTest#beforeAll",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738510
+    }, {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/MoviesApiTest.java:15-18",
+      "title" : "ru.practicum.moviehub.http.MoviesApiTest#beforeEach",
+      "content" : "Метод beforeEach (()). Возвращает void.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/MoviesApiTest.java",
+      "startLine" : 15,
+      "endLine" : 18,
+      "symbolFqn" : "ru.practicum.moviehub.http.MoviesApiTest#beforeEach",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738510
+    }, {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/MoviesApiTest.java:20-23",
+      "title" : "ru.practicum.moviehub.http.MoviesApiTest#afterAll",
+      "content" : "Метод afterAll (()). Возвращает void.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/MoviesApiTest.java",
+      "startLine" : 20,
+      "endLine" : 23,
+      "symbolFqn" : "ru.practicum.moviehub.http.MoviesApiTest#afterAll",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738510
+    }, {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/MoviesApiTest.java:25-28",
+      "title" : "ru.practicum.moviehub.http.MoviesApiTest#getMovies_whenEmpty_returnsEmptyArray",
+      "content" : "Метод getMovies_whenEmpty_returnsEmptyArray (()). Возвращает void.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/MoviesApiTest.java",
+      "startLine" : 25,
+      "endLine" : 28,
+      "symbolFqn" : "ru.practicum.moviehub.http.MoviesApiTest#getMovies_whenEmpty_returnsEmptyArray",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738510
+    } ],
+    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/store/MoviesStore.java" : [ {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/store/MoviesStore.java:3-4",
+      "title" : "ru.practicum.moviehub.store.MoviesStore",
+      "content" : "Класс MoviesStore.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/store/MoviesStore.java",
+      "startLine" : 3,
+      "endLine" : 4,
+      "symbolFqn" : "ru.practicum.moviehub.store.MoviesStore",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738509
+    } ],
+    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/ListOfMoviesTypeToken.java" : [ {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/ListOfMoviesTypeToken.java:8-9",
+      "title" : "ru.practicum.moviehub.http.ListOfMoviesTypeToken",
+      "content" : "Класс ListOfMoviesTypeToken.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/ListOfMoviesTypeToken.java",
+      "startLine" : 8,
+      "endLine" : 9,
+      "symbolFqn" : "ru.practicum.moviehub.http.ListOfMoviesTypeToken",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738510
+    } ],
+    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/model/Movie.java" : [ {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/model/Movie.java:3-5",
+      "title" : "ru.practicum.moviehub.model.Movie",
+      "content" : "Класс Movie.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/model/Movie.java",
+      "startLine" : 3,
+      "endLine" : 5,
+      "symbolFqn" : "ru.practicum.moviehub.model.Movie",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738509
+    } ]
+  }
+}
