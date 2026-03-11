@@ -10,7 +10,7 @@
         <option name="kind" value="ENTITY_SUMMARY" />
         <option name="key" value="entity:ru.practicum.moviehub.http.MoviesApiTest" />
         <option name="title" value="Auto summary: ru.practicum.moviehub.http.MoviesApiTest" />
-        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.google.gson.Gson;&#10;import org.junit.jupiter.api.AfterAll;&#10;import org.junit.jupiter.api.BeforeAll;&#10;import org.junit.jupiter.api.BeforeEach;&#10;import org.junit.jupiter.api.DisplayName;&#10;import org.junit.jupiter.api.Test;&#10;import ru.practicum.moviehub.store.MoviesStore;&#10;&#10;import java.net.URI;&#10;import java.net.http.HttpClient;&#10;import java.net.http.HttpRequest;&#10;import java.net.http.HttpResponse;&#10;import java.nio.charset.StandardCharsets;&#10;import java.time.Duration;&#10;import java.util.Map;&#10;&#10;import static org.junit.jupiter.api.Assertions.assertEquals;&#10;import static org.junit.jupiter.api.Assertions.assertFalse;&#10;import static org.junit.jupiter.api.Assertions.assertTrue;&#10;&#10;public class MoviesApiTest {&#10;    private static final MoviesStore store = new MoviesStore();&#10;    private static final MoviesServer server = new MoviesServer(store, 8080);&#10;    private static final String BASE = &quot;http://localhost:8080&quot;;&#10;    private static HttpClient client;&#10;    private static final Gson gson = new Gson();&#10;&#10;    @BeforeAll&#10;    static void beforeAll() {&#10;        server.start();&#10;        client = HttpClient.newBuilder()&#10;                .connectTimeout(Duration.ofSeconds(2))&#10;                .build();&#10;    }&#10;&#10;    @AfterAll&#10;    static void afterAll() {&#10;        server.stop();&#10;```" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.google.gson.Gson;&#10;import com.google.gson.JsonObject;&#10;import org.junit.jupiter.api.AfterAll;&#10;import org.junit.jupiter.api.BeforeAll;&#10;import org.junit.jupiter.api.BeforeEach;&#10;import org.junit.jupiter.api.DisplayName;&#10;import org.junit.jupiter.api.Test;&#10;import ru.practicum.moviehub.store.MoviesStore;&#10;&#10;import java.net.URI;&#10;import java.net.http.HttpClient;&#10;import java.net.http.HttpRequest;&#10;import java.net.http.HttpResponse;&#10;import java.nio.charset.StandardCharsets;&#10;import java.time.Duration;&#10;&#10;import static org.junit.jupiter.api.Assertions.assertEquals;&#10;import static org.junit.jupiter.api.Assertions.assertFalse;&#10;import static org.junit.jupiter.api.Assertions.assertTrue;&#10;&#10;public class MoviesApiTest {&#10;    private static final MoviesStore store = new MoviesStore();&#10;    private static final MoviesServer server = new MoviesServer(store, 8080);&#10;    private static final String BASE = &quot;http://localhost:8080&quot;;&#10;    private static HttpClient client;&#10;    private static final Gson gson = new Gson();&#10;&#10;    @BeforeAll&#10;    static void beforeAll() {&#10;        server.start();&#10;        client = HttpClient.newBuilder()&#10;                .connectTimeout(Duration.ofSeconds(2))&#10;                .build();&#10;    }&#10;&#10;    @AfterAll&#10;    static void afterAll() {&#10;        server.stop();&#10;```" />
         <option name="slug" value="entity:ru.practicum.moviehub.http.MoviesApiTest" />
         <option name="meta">
           <map>
@@ -18,8 +18,8 @@
             <entry key="tags" value="entity,summary" />
           </map>
         </option>
-        <option name="createdAt" value="1773074707731" />
-        <option name="updatedAt" value="1773074707731" />
+        <option name="createdAt" value="1773230301306" />
+        <option name="updatedAt" value="1773230301306" />
       </Item>
       <Item>
         <option name="id" value="_46tgrr55Y5NV7OKAxqMkbrvYAA" />
@@ -67,7 +67,7 @@
         <option name="kind" value="ENTITY_SUMMARY" />
         <option name="key" value="entity:ru.practicum.moviehub.http.MoviesHandler" />
         <option name="title" value="Auto summary: ru.practicum.moviehub.http.MoviesHandler" />
-        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.google.gson.Gson;&#10;import com.google.gson.JsonElement;&#10;import com.google.gson.JsonSyntaxException;&#10;import com.sun.net.httpserver.HttpExchange;&#10;import com.sun.net.httpserver.HttpHandler;&#10;import ru.practicum.moviehub.model.Movie;&#10;import ru.practicum.moviehub.store.MoviesStore;&#10;&#10;import java.io.BufferedReader;&#10;import java.io.IOException;&#10;import java.io.InputStreamReader;&#10;import java.nio.charset.StandardCharsets;&#10;import java.time.Year;&#10;import java.util.ArrayList;&#10;import java.util.Collections;&#10;import java.util.List;&#10;import java.util.Optional;&#10;&#10;public class MoviesHandler extends BaseHttpHandler implements HttpHandler {&#10;    private final MoviesStore store;&#10;    private final Gson gson = new Gson();&#10;&#10;    public MoviesHandler(MoviesStore store) {&#10;        this.store = store;&#10;    }&#10;&#10;    @Override&#10;    public void handle(HttpExchange ex) throws IOException {&#10;        String method = ex.getRequestMethod();&#10;        String path = ex.getRequestURI().getPath();&#10;&#10;        if (method.equalsIgnoreCase(&quot;GET&quot;)) {&#10;            handleGet(ex);&#10;            return;&#10;        }&#10;        if (method.equalsIgnoreCase(&quot;POST&quot;)) {&#10;            handlePost(ex);&#10;            return;&#10;```" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.google.gson.Gson;&#10;import com.google.gson.JsonElement;&#10;import com.google.gson.JsonSyntaxException;&#10;import com.sun.net.httpserver.HttpExchange;&#10;import ru.practicum.moviehub.model.Movie;&#10;import ru.practicum.moviehub.store.MoviesStore;&#10;&#10;import java.io.BufferedReader;&#10;import java.io.IOException;&#10;import java.io.InputStreamReader;&#10;import java.nio.charset.StandardCharsets;&#10;import java.time.Year;&#10;import java.util.ArrayList;&#10;import java.util.List;&#10;import java.util.Optional;&#10;&#10;public class MoviesHandler extends BaseHttpHandler {&#10;    private final MoviesStore store;&#10;    private final Gson gson = new Gson();&#10;&#10;    public MoviesHandler(MoviesStore store) {&#10;        this.store = store;&#10;    }&#10;&#10;    @Override&#10;    public void handle(HttpExchange ex) throws IOException {&#10;        String method = ex.getRequestMethod();&#10;        String path = ex.getRequestURI().getPath();&#10;&#10;        if (method.equalsIgnoreCase(&quot;GET&quot;)) {&#10;            handleGet(ex);&#10;            return;&#10;        }&#10;        if (method.equalsIgnoreCase(&quot;POST&quot;)) {&#10;            handlePost(ex);&#10;            return;&#10;        }&#10;&#10;```" />
         <option name="slug" value="entity:ru.practicum.moviehub.http.MoviesHandler" />
         <option name="meta">
           <map>
@@ -75,8 +75,8 @@
             <entry key="tags" value="entity,summary" />
           </map>
         </option>
-        <option name="createdAt" value="1773073763109" />
-        <option name="updatedAt" value="1773073763109" />
+        <option name="createdAt" value="1773230287593" />
+        <option name="updatedAt" value="1773230287593" />
       </Item>
       <Item>
         <option name="id" value="Fc2IWwZweeSp4ZdXD8nKXtLCBPU" />

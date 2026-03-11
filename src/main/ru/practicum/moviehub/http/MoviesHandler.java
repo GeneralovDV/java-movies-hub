@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonSyntaxException;
 import com.sun.net.httpserver.HttpExchange;
-import com.sun.net.httpserver.HttpHandler;
 import ru.practicum.moviehub.model.Movie;
 import ru.practicum.moviehub.store.MoviesStore;
 
@@ -14,11 +13,10 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.time.Year;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-public class MoviesHandler extends BaseHttpHandler implements HttpHandler {
+public class MoviesHandler extends BaseHttpHandler {
     private final MoviesStore store;
     private final Gson gson = new Gson();
 
@@ -92,7 +90,7 @@ public class MoviesHandler extends BaseHttpHandler implements HttpHandler {
         }
 
         try {
-            JsonElement jsonElement = new Gson().fromJson(json, JsonElement.class);
+            JsonElement jsonElement = gson.fromJson(json, JsonElement.class);
             if (jsonElement == null || !jsonElement.isJsonObject()) {
                 sendError(ex, 400, "Некорректный JSON");
                 return;
@@ -157,10 +155,5 @@ public class MoviesHandler extends BaseHttpHandler implements HttpHandler {
             sendError(ex, 400, "Некорректный параметр запроса — 'year'");
         }
     }
-
-    protected void sendError(HttpExchange ex, int status, String error) throws IOException {
-        sendError(ex, status, error, Collections.emptyList());
-    }
-
 }
 

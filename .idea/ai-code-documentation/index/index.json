@@ -12,79 +12,6 @@
       "tags" : [ "markdown", "doc" ],
       "lastEditMillis" : 1773057738496
     } ],
-    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java" : [ {
-      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java:6-12",
-      "title" : "ru.practicum.moviehub.MovieHubApp",
-      "content" : "Класс MovieHubApp.",
-      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java",
-      "startLine" : 6,
-      "endLine" : 12,
-      "symbolFqn" : "ru.practicum.moviehub.MovieHubApp",
-      "tags" : [ ],
-      "lastEditMillis" : 1773057738508
-    }, {
-      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java:7-11",
-      "title" : "ru.practicum.moviehub.MovieHubApp#main",
-      "content" : "Метод main ((String[] args)). Возвращает void.",
-      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java",
-      "startLine" : 7,
-      "endLine" : 11,
-      "symbolFqn" : "ru.practicum.moviehub.MovieHubApp#main",
-      "tags" : [ ],
-      "lastEditMillis" : 1773057738508
-    }, {
-      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java:INV:7",
-      "title" : "Ключевые вызовы: main(String[])",
-      "content" : "- `java.lang.Runtime#getRuntime()`\n\n- `java.lang.Runtime#addShutdownHook(Thread)`\n",
-      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java",
-      "startLine" : 7,
-      "endLine" : 11,
-      "symbolFqn" : "ru.practicum.moviehub.MovieHubApp#main(String[])",
-      "tags" : [ "inline", "invocation" ],
-      "lastEditMillis" : 1773057738508
-    } ],
-    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml" : [ {
-      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml:1-1",
-      "title" : "yaml:name",
-      "content" : "Java Tests",
-      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml",
-      "startLine" : 1,
-      "endLine" : 1,
-      "symbolFqn" : null,
-      "tags" : [ "yaml", "yaml:name", "config" ],
-      "lastEditMillis" : 1773057738494
-    }, {
-      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml:3-4",
-      "title" : "yaml:on",
-      "content" : "pull_request:",
-      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml",
-      "startLine" : 3,
-      "endLine" : 4,
-      "symbolFqn" : null,
-      "tags" : [ "yaml", "yaml:on", "config" ],
-      "lastEditMillis" : 1773057738494
-    }, {
-      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml:6-7",
-      "title" : "yaml:jobs",
-      "content" : "build: uses: yandex-praktikum/java-movies-hub/.github/workflows/api-tests.yml@ci",
-      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml",
-      "startLine" : 6,
-      "endLine" : 7,
-      "symbolFqn" : null,
-      "tags" : [ "yaml", "yaml:jobs", "config" ],
-      "lastEditMillis" : 1773057738494
-    } ],
-    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/api/ErrorResponse.java" : [ {
-      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/api/ErrorResponse.java:3-5",
-      "title" : "ru.practicum.moviehub.api.ErrorResponse",
-      "content" : "Класс ErrorResponse.",
-      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/api/ErrorResponse.java",
-      "startLine" : 3,
-      "endLine" : 5,
-      "symbolFqn" : "ru.practicum.moviehub.api.ErrorResponse",
-      "tags" : [ ],
-      "lastEditMillis" : 1773057738508
-    } ],
     "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/http/BaseHttpHandler.java" : [ {
       "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/http/BaseHttpHandler.java:5-7",
       "title" : "ru.practicum.moviehub.http.BaseHttpHandler",
@@ -95,6 +22,57 @@
       "symbolFqn" : "ru.practicum.moviehub.http.BaseHttpHandler",
       "tags" : [ ],
       "lastEditMillis" : 1773057738508
+    } ],
+    "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/cases/HttpActions.java" : [ {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/cases/HttpActions.java:10-231",
+      "title" : "ru.tinkoff.load.eacqFpReceiptService.cases.HttpActions",
+      "content" : "Класс HttpActions.",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/cases/HttpActions.java",
+      "startLine" : 10,
+      "endLine" : 231,
+      "symbolFqn" : "ru.tinkoff.load.eacqFpReceiptService.cases.HttpActions",
+      "tags" : [ ],
+      "lastEditMillis" : 1773229334285
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/cases/HttpActions.java:47-163",
+      "title" : "ru.tinkoff.load.eacqFpReceiptService.cases.HttpActions#requestReceipt",
+      "content" : "Метод requestReceipt (()). Возвращает String.",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/cases/HttpActions.java",
+      "startLine" : 47,
+      "endLine" : 163,
+      "symbolFqn" : "ru.tinkoff.load.eacqFpReceiptService.cases.HttpActions#requestReceipt",
+      "tags" : [ ],
+      "lastEditMillis" : 1773229334285
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/cases/HttpActions.java:165-193",
+      "title" : "ru.tinkoff.load.eacqFpReceiptService.cases.HttpActions#requestReceiptForPatch",
+      "content" : "Метод requestReceiptForPatch (()). Возвращает String.",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/cases/HttpActions.java",
+      "startLine" : 165,
+      "endLine" : 193,
+      "symbolFqn" : "ru.tinkoff.load.eacqFpReceiptService.cases.HttpActions#requestReceiptForPatch",
+      "tags" : [ ],
+      "lastEditMillis" : 1773229334285
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/cases/HttpActions.java:195-201",
+      "title" : "ru.tinkoff.load.eacqFpReceiptService.cases.HttpActions#requestNeedFiscal",
+      "content" : "Метод requestNeedFiscal (()). Возвращает String.",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/cases/HttpActions.java",
+      "startLine" : 195,
+      "endLine" : 201,
+      "symbolFqn" : "ru.tinkoff.load.eacqFpReceiptService.cases.HttpActions#requestNeedFiscal",
+      "tags" : [ ],
+      "lastEditMillis" : 1773229334285
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/cases/HttpActions.java:203-230",
+      "title" : "ru.tinkoff.load.eacqFpReceiptService.cases.HttpActions#requestGetReceiptsStates",
+      "content" : "Метод requestGetReceiptsStates (()). Возвращает String.",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/cases/HttpActions.java",
+      "startLine" : 203,
+      "endLine" : 230,
+      "symbolFqn" : "ru.tinkoff.load.eacqFpReceiptService.cases.HttpActions#requestGetReceiptsStates",
+      "tags" : [ ],
+      "lastEditMillis" : 1773229334285
     } ],
     "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/MoviesApiTest.java" : [ {
       "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/test/ru/practicum/moviehub/http/MoviesApiTest.java:8-29",
@@ -147,6 +125,114 @@
       "tags" : [ ],
       "lastEditMillis" : 1773057738510
     } ],
+    "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/scenarios/HttpScenario.java" : [ {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/scenarios/HttpScenario.java:14-59",
+      "title" : "ru.tinkoff.load.eacqFpReceiptService.scenarios.HttpScenario",
+      "content" : "Класс HttpScenario.",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/scenarios/HttpScenario.java",
+      "startLine" : 14,
+      "endLine" : 59,
+      "symbolFqn" : "ru.tinkoff.load.eacqFpReceiptService.scenarios.HttpScenario",
+      "tags" : [ ],
+      "lastEditMillis" : 1773229334316
+    } ],
+    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/model/Movie.java" : [ {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/model/Movie.java:3-5",
+      "title" : "ru.practicum.moviehub.model.Movie",
+      "content" : "Класс Movie.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/model/Movie.java",
+      "startLine" : 3,
+      "endLine" : 5,
+      "symbolFqn" : "ru.practicum.moviehub.model.Movie",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738509
+    } ],
+    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java" : [ {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java:6-12",
+      "title" : "ru.practicum.moviehub.MovieHubApp",
+      "content" : "Класс MovieHubApp.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java",
+      "startLine" : 6,
+      "endLine" : 12,
+      "symbolFqn" : "ru.practicum.moviehub.MovieHubApp",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738508
+    }, {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java:7-11",
+      "title" : "ru.practicum.moviehub.MovieHubApp#main",
+      "content" : "Метод main ((String[] args)). Возвращает void.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java",
+      "startLine" : 7,
+      "endLine" : 11,
+      "symbolFqn" : "ru.practicum.moviehub.MovieHubApp#main",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738508
+    }, {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java:INV:7",
+      "title" : "Ключевые вызовы: main(String[])",
+      "content" : "- `java.lang.Runtime#getRuntime()`\n\n- `java.lang.Runtime#addShutdownHook(Thread)`\n",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/MovieHubApp.java",
+      "startLine" : 7,
+      "endLine" : 11,
+      "symbolFqn" : "ru.practicum.moviehub.MovieHubApp#main(String[])",
+      "tags" : [ "inline", "invocation" ],
+      "lastEditMillis" : 1773057738508
+    } ],
+    "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gradle/8.7/gc.properties" : [ ],
+    "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/Stability.java" : [ {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/Stability.java:21-100",
+      "title" : "ru.tinkoff.load.eacqFpReceiptService.Stability",
+      "content" : "Класс Stability.",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/Stability.java",
+      "startLine" : 21,
+      "endLine" : 100,
+      "symbolFqn" : "ru.tinkoff.load.eacqFpReceiptService.Stability",
+      "tags" : [ ],
+      "lastEditMillis" : 1773229334327
+    } ],
+    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml" : [ {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml:1-1",
+      "title" : "yaml:name",
+      "content" : "Java Tests",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml",
+      "startLine" : 1,
+      "endLine" : 1,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:name", "config" ],
+      "lastEditMillis" : 1773057738494
+    }, {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml:3-4",
+      "title" : "yaml:on",
+      "content" : "pull_request:",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml",
+      "startLine" : 3,
+      "endLine" : 4,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:on", "config" ],
+      "lastEditMillis" : 1773057738494
+    }, {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml:6-7",
+      "title" : "yaml:jobs",
+      "content" : "build: uses: yandex-praktikum/java-movies-hub/.github/workflows/api-tests.yml@ci",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/.github/workflows/api-tests.yml",
+      "startLine" : 6,
+      "endLine" : 7,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:jobs", "config" ],
+      "lastEditMillis" : 1773057738494
+    } ],
+    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/api/ErrorResponse.java" : [ {
+      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/api/ErrorResponse.java:3-5",
+      "title" : "ru.practicum.moviehub.api.ErrorResponse",
+      "content" : "Класс ErrorResponse.",
+      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/api/ErrorResponse.java",
+      "startLine" : 3,
+      "endLine" : 5,
+      "symbolFqn" : "ru.practicum.moviehub.api.ErrorResponse",
+      "tags" : [ ],
+      "lastEditMillis" : 1773057738508
+    } ],
+    "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gradle/vcs-1/gc.properties" : [ ],
     "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/store/MoviesStore.java" : [ {
       "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/store/MoviesStore.java:3-4",
       "title" : "ru.practicum.moviehub.store.MoviesStore",
@@ -169,16 +255,148 @@
       "tags" : [ ],
       "lastEditMillis" : 1773057738510
     } ],
-    "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/model/Movie.java" : [ {
-      "id" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/model/Movie.java:3-5",
-      "title" : "ru.practicum.moviehub.model.Movie",
-      "content" : "Класс Movie.",
-      "filePath" : "/Users/d.v.generalov/IdeaProjects/java-movies-hub/src/main/ru/practicum/moviehub/model/Movie.java",
-      "startLine" : 3,
-      "endLine" : 5,
-      "symbolFqn" : "ru.practicum.moviehub.model.Movie",
+    "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gradle/8.7/dependencies-accessors/gc.properties" : [ ],
+    "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/feeders/Feeders.java" : [ {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/feeders/Feeders.java:12-46",
+      "title" : "ru.tinkoff.load.eacqFpReceiptService.feeders.Feeders",
+      "content" : "Класс Feeders.",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/src/gatling/java/ru/tinkoff/load/eacqFpReceiptService/feeders/Feeders.java",
+      "startLine" : 12,
+      "endLine" : 46,
+      "symbolFqn" : "ru.tinkoff.load.eacqFpReceiptService.feeders.Feeders",
       "tags" : [ ],
-      "lastEditMillis" : 1773057738509
+      "lastEditMillis" : 1773229334321
+    } ],
+    "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml" : [ {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml:1-2",
+      "title" : "yaml:include",
+      "content" : "- 'https://s3-msk.tinkoff.ru/perf-tools-perf-ci-template/6-gradle-stable.yml'",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml",
+      "startLine" : 1,
+      "endLine" : 2,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:include", "config" ],
+      "lastEditMillis" : 1773229682416
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml:4-5",
+      "title" : "yaml:stages",
+      "content" : "- debug-test - data-prep - tests - perf1-deploy - tests_perf1 - perf1-clean",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml",
+      "startLine" : 4,
+      "endLine" : 5,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:stages", "config" ],
+      "lastEditMillis" : 1773229682416
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml:12-13",
+      "title" : "yaml:.variables_buildInfra",
+      "content" : "variables: dbUrl: \"jdbc:oracle:thin:@db-acq-tst.tcsbank.ru:1522/ACQ_TST\" dbUser: \"EACQ_AUTO\" dbPassword: ${ACQ_RECEIPT_DB_TST_PASSWORD} dbPostgresUrl: \"jdbc:postgresql://ppd-receipt-service-acq-receipt-1.ix.pg-test.tcsbank.ru:5432/fp_receipt_service_test\" dbPostgresUser: \"fp_receipt_service_test\" dbPostgresPassword: ${FP_RS_DB_TST_PASSWORD} SAGE_GROUP: \"eacq_fiscal_test\" TEST_ENVIRONMENT: \"Kuber-Api\"",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml",
+      "startLine" : 12,
+      "endLine" : 13,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:.variables_buildInfra", "config" ],
+      "lastEditMillis" : 1773229682416
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml:23-24",
+      "title" : "yaml:.variables_perf1",
+      "content" : "variables: k8s_dbUrl: \"jdbc:oracle:thin:@db-acq-tst.tcsbank.ru:1522/ACQ_TST\" k8s_dbUser: \"EACQ_AUTO\" k8s_dbPassword: ${ACQ_RECEIPT_DB_TST_PASSWORD} k8s_dbPostgresUrl: \"jdbc:postgresql://ppd-receipt-service-acq-receipt-1.ix.pg-test.tcsbank.ru:5432/fp_receipt_service_test\" k8s_dbPostgresUser: \"fp_receipt_service_test\" k8s_dbPostgresPassword: ${FP_RS_DB_TST_PASSWORD} k8s_baseUrl: \"http://eacq-fp-receipt-service-test.eacq-fp-receipt-service.svc.cluster.local:8080\" NAMESPACE: \"eacq-fp-receipt-service\" DEPLOYMENTS: \"eacq-fp-receipt-service-test\" SERVICE: \"eacq-fp-receipt-service-test\" RESOURCES_CPU…",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml",
+      "startLine" : 23,
+      "endLine" : 24,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:.variables_perf1", "config" ],
+      "lastEditMillis" : 1773229682416
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml:40-41",
+      "title" : "yaml:DebugTest",
+      "content" : "extends: - .PerfTest - .variables_buildInfra stage: debug-test variables: LAUNCH_SCRIPT: \"gradle gatlingRun --simulation ru.tinkoff.load.eacqFpReceiptService.Debug\" baseUrl: \"https://eacq-fp-receipt-service-test.dev-tcsgroup.io\"",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml",
+      "startLine" : 40,
+      "endLine" : 41,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:DebugTest", "config" ],
+      "lastEditMillis" : 1773229682416
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml:49-50",
+      "title" : "yaml:DataPrep",
+      "content" : "extends: - .PerfTest - .variables_buildInfra stage: data-prep variables: LAUNCH_SCRIPT: \"gradle gatlingRun --simulation ru.tinkoff.load.eacqFpReceiptService.DataPrep\" baseUrl: \"https://eacq-fp-receipt-service-test.dev-tcsgroup.io\" intensity: ${INTENSITY_DATA_PREP} rampDuration: ${RAMP_DURATION_DATA_PREP} stageDuration: ${STAGE_DURATION_DATA_PREP} rules: - if: '$TRIGGER_JOB == \"Stability\"' - when: always allow_failure: true",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml",
+      "startLine" : 49,
+      "endLine" : 50,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:DataPrep", "config" ],
+      "lastEditMillis" : 1773229682416
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml:65-66",
+      "title" : "yaml:Stability",
+      "content" : "extends: - .PerfTest - .variables_buildInfra stage: tests variables: LAUNCH_SCRIPT: \"gradle gatlingRun --simulation ru.tinkoff.load.eacqFpReceiptService.Stability\" baseUrl: \"https://eacq-fp-receipt-service-test.dev-tcsgroup.io\" intensity: \"1\" intensityReceiptNew: ${INTENSITY_RECEIPT_NEW} peakIntensityReceiptNew: ${PEAK_INTENSITY_RECEIPT_NEW} intensityGetReceipts: ${INTENSITY_GET_RECEIPT} peakIntensityGetReceipts: ${PEAK_INTENSITY_GET_RECEIPT} intensityGetReceiptStates: ${INTENSITY_GET_RECEIPTS_STATES} rampDuration: ${RAMP_DURATION_STABILITY} stageDuration: ${STAGE_DURATION_STABILITY} peakRamp…",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml",
+      "startLine" : 65,
+      "endLine" : 66,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:Stability", "config" ],
+      "lastEditMillis" : 1773229682416
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml:90-91",
+      "title" : "yaml:MaxPerformance",
+      "content" : "extends: - .PerfTest - .variables_buildInfra stage: tests variables: LAUNCH_SCRIPT: \"gradle gatlingRun --simulation ru.tinkoff.load.eacqFpReceiptService.MaxPerformance\" baseUrl: \"https://eacq-fp-receipt-service-test.dev-tcsgroup.io\" intensity: ${INTENSITY_MAX_PERF} rampDuration: ${RAMP_DURATION_MAX_PERF} stageDuration: ${STAGE_DURATION_MAX_PERF} stagesNumber: ${STAGE_NUMBER_MAX_PERF}",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml",
+      "startLine" : 90,
+      "endLine" : 91,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:MaxPerformance", "config" ],
+      "lastEditMillis" : 1773229682416
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml:103-104",
+      "title" : "yaml:Benchmark",
+      "content" : "extends: - .PerfTest - .variables_buildInfra stage: tests variables: LAUNCH_SCRIPT: \"gradle gatlingRun --simulation ru.tinkoff.load.eacqFpReceiptService.Benchmark\" baseUrl: \"https://eacq-fp-receipt-service-test.dev-tcsgroup.io\" COSMOS_PROFILE: default",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml",
+      "startLine" : 103,
+      "endLine" : 104,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:Benchmark", "config" ],
+      "lastEditMillis" : 1773229682416
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml:113-114",
+      "title" : "yaml:.baseJob",
+      "content" : "before_script: - export SA_PERFORMANCE_K8S_CLONE_KEY=\"$SA_PERFORMANCE_K8S_AUTH\" - export SA_PERFORMANCE_K8S_AUTH=\"$EACQ_SA_PERFORMANCE_K8S_AUTH\" - export SA_PERFORMANCE_K8S_AUTH_NAME=\"$EACQ_SA_PERFORMANCE_K8S_AUTH_NAME\" variables: DEPLOYMENTS: \"eacq-fp-receipt-service-test\" SERVICE: \"eacq-fp-receipt-service-test\" NAMESPACE: \"eacq-fp-receipt-service\" CONFIGMAPS: \"eacq-fp-receipt-service-test\" REPLACE_ENVS: \"k8s__ya_ruc1_dev1=k8s__ya_ruc1_d_cloud_test_perf1;acqit__k8s-ya-ruc1-dev1-eacqprepl-ro=acqit__k8s-ya-ruc1-perf1-eacqprepl-ro\"",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml",
+      "startLine" : 113,
+      "endLine" : 114,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:.baseJob", "config" ],
+      "lastEditMillis" : 1773229682416
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml:125-126",
+      "title" : "yaml:DeployService_perf1",
+      "content" : "stage: perf1-deploy extends: - .K8sDeployPerf1 - .baseJob when: manual",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml",
+      "startLine" : 125,
+      "endLine" : 126,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:DeployService_perf1", "config" ],
+      "lastEditMillis" : 1773229682416
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml:132-133",
+      "title" : "yaml:Stability_perf1",
+      "content" : "extends: - .K8sGunPerf1 - .variables_perf1 stage: tests_perf1 variables: k8s_LAUNCH_SCRIPT: \"gradle gatlingRun --simulation ru.tinkoff.load.eacqFpReceiptService.Stability\" k8s_intensityReceiptNew: \"5\" #2.5 на один под k8s_peakIntensityReceiptNew: \"10\" #4.2 на один под k8s_intensityGetReceipts: \"25\" k8s_peakIntensityGetReceipts: \"85\" k8s_rampDuration: \"5 minutes\" k8s_stageDuration: \"20 minutes\" k8s_peakRampDuration: \"1 minutes\" k8s_peakStageDuration: \"5 minutes\" needs: - DeployService_perf1 when: on_success",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml",
+      "startLine" : 132,
+      "endLine" : 133,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:Stability_perf1", "config" ],
+      "lastEditMillis" : 1773229682416
+    }, {
+      "id" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml:151-152",
+      "title" : "yaml:RemoveService_perf1",
+      "content" : "stage: perf1-clean extends: - .K8sRemovePerf1 - .baseJob needs: - job: Stability_perf1 when: on_success",
+      "filePath" : "/Users/d.v.generalov/eacq-fp-receipt-service-perf/.gitlab-ci.yml",
+      "startLine" : 151,
+      "endLine" : 152,
+      "symbolFqn" : null,
+      "tags" : [ "yaml", "yaml:RemoveService_perf1", "config" ],
+      "lastEditMillis" : 1773229682416
     } ]
   }
 }

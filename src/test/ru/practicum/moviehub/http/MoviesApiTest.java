@@ -1,6 +1,7 @@
 package ru.practicum.moviehub.http;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,7 +15,6 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
-import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -25,7 +25,6 @@ public class MoviesApiTest {
     private static final MoviesServer server = new MoviesServer(store, 8080);
     private static final String BASE = "http://localhost:8080";
     private static HttpClient client;
-    private static final Gson gson = new Gson();
 
     @BeforeAll
     static void beforeAll() {
@@ -84,9 +83,12 @@ public class MoviesApiTest {
         String body = resp.body();
 
         assertEquals(201, resp.statusCode());
-        assertTrue(body.contains("\"id\":"));
-        assertTrue(body.contains("\"title\":\"Matrix\""));
-        assertTrue(body.contains("\"year\":1999"));
+
+        JsonObject created = new Gson().fromJson(body, JsonObject.class);
+
+        assertTrue(created.has("id"));
+        assertEquals("Matrix", created.get("title").getAsString());
+        assertEquals(1999, created.get("year").getAsInt());
     }
 
     @Test
@@ -377,7 +379,8 @@ public class MoviesApiTest {
                 .build();
 
         var resp = client.send(req, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
-        return gson.fromJson(resp.body(), Map.class).get("id").toString().charAt(0) - '0';
+        JsonObject created = new Gson().fromJson(resp.body(), JsonObject.class);
+        return created.get("id").getAsInt();
     }
 
     private void addMovie(String title, int year) throws Exception {
