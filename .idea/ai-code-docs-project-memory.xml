@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AICodeDocsProjectMemory">
+    <items>
+      <Item>
+        <option name="id" value="jGRETtkYx7nX3ghqXiThREmrbfI" />
+        <option name="userId" value="d.v.generalov" />
+        <option name="projectId" value="fe1a3b50" />
+        <option name="scope" value="ENTITY" />
+        <option name="kind" value="ENTITY_SUMMARY" />
+        <option name="key" value="entity:ru.practicum.moviehub.http.MoviesApiTest" />
+        <option name="title" value="Auto summary: ru.practicum.moviehub.http.MoviesApiTest" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.google.gson.Gson;&#10;import com.google.gson.JsonObject;&#10;import org.junit.jupiter.api.AfterAll;&#10;import org.junit.jupiter.api.BeforeAll;&#10;import org.junit.jupiter.api.BeforeEach;&#10;import org.junit.jupiter.api.DisplayName;&#10;import org.junit.jupiter.api.Test;&#10;import ru.practicum.moviehub.store.MoviesStore;&#10;&#10;import java.net.URI;&#10;import java.net.http.HttpClient;&#10;import java.net.http.HttpRequest;&#10;import java.net.http.HttpResponse;&#10;import java.nio.charset.StandardCharsets;&#10;import java.time.Duration;&#10;&#10;import static org.junit.jupiter.api.Assertions.assertEquals;&#10;import static org.junit.jupiter.api.Assertions.assertFalse;&#10;import static org.junit.jupiter.api.Assertions.assertTrue;&#10;&#10;public class MoviesApiTest {&#10;    private static final MoviesStore store = new MoviesStore();&#10;    private static final MoviesServer server = new MoviesServer(store, 8080);&#10;    private static final String BASE = &quot;http://localhost:8080&quot;;&#10;    private static HttpClient client;&#10;    private static final Gson gson = new Gson();&#10;&#10;    @BeforeAll&#10;    static void beforeAll() {&#10;        server.start();&#10;        client = HttpClient.newBuilder()&#10;                .connectTimeout(Duration.ofSeconds(2))&#10;                .build();&#10;    }&#10;&#10;    @AfterAll&#10;    static void afterAll() {&#10;        server.stop();&#10;```" />
+        <option name="slug" value="entity:ru.practicum.moviehub.http.MoviesApiTest" />
+        <option name="meta">
+          <map>
+            <entry key="fqId" value="ru.practicum.moviehub.http.MoviesApiTest" />
+            <entry key="tags" value="entity,summary" />
+          </map>
+        </option>
+        <option name="createdAt" value="1773230301306" />
+        <option name="updatedAt" value="1773230301306" />
+      </Item>
+      <Item>
+        <option name="id" value="_46tgrr55Y5NV7OKAxqMkbrvYAA" />
+        <option name="userId" value="d.v.generalov" />
+        <option name="projectId" value="fe1a3b50" />
+        <option name="scope" value="ENTITY" />
+        <option name="kind" value="ENTITY_SUMMARY" />
+        <option name="key" value="entity:MoviesServer" />
+        <option name="title" value="Auto summary: MoviesServer" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.sun.net.httpserver.HttpServer;&#10;&#10;import java.io.IOException;&#10;import java.net.InetSocketAddress;&#10;&#10;зclass MoviesServer {&#10;    private final HttpServer server;&#10;&#10;    public MoviesServer() {&#10;        try {&#10;            // создайте сервер&#10;            server = HttpServer.create(new InetSocketAddress(8080), 0);&#10;            server.createContext(&quot;/movies&quot;, new MoviesHandler());&#10;            // создайте контекст для эндпоинта /movies&#10;        } catch (IOException e) {&#10;            throw new RuntimeException(&quot;Не удалось создать HTTP-сервер&quot;, e);&#10;        }&#10;    }&#10;&#10;    public void start() {&#10;        // запустите сервер&#10;        server.start();&#10;        System.out.println(&quot;Сервер запущен&quot;);&#10;    }&#10;&#10;    public void stop() {&#10;        // остановите сервер&#10;        server.stop(0);&#10;        System.out.println(&quot;Сервер остановлен&quot;);&#10;    }&#10;}&#10;```" />
+        <option name="slug" value="entity:MoviesServer" />
+        <option name="meta">
+          <map>
+            <entry key="fqId" value="MoviesServer" />
+            <entry key="tags" value="entity,summary" />
+          </map>
+        </option>
+        <option name="createdAt" value="1773067321040" />
+        <option name="updatedAt" value="1773067321040" />
+      </Item>
+      <Item>
+        <option name="id" value="H5S4xPJEdOHTcI1KUTL52dJihC0" />
+        <option name="userId" value="d.v.generalov" />
+        <option name="projectId" value="fe1a3b50" />
+        <option name="scope" value="ENTITY" />
+        <option name="kind" value="ENTITY_SUMMARY" />
+        <option name="key" value="entity:ru.practicum.moviehub.http.MoviesServer" />
+        <option name="title" value="Auto summary: ru.practicum.moviehub.http.MoviesServer" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.sun.net.httpserver.HttpServer;&#10;import ru.practicum.moviehub.store.MoviesStore;&#10;&#10;import java.io.IOException;&#10;import java.net.InetSocketAddress;&#10;&#10;public class MoviesServer {&#10;    private final HttpServer server;&#10;&#10;    public MoviesServer(MoviesStore store, int port) {&#10;        try {&#10;            server = HttpServer.create(new InetSocketAddress(port), 0);&#10;            server.createContext(&quot;/movies&quot;, new MoviesHandler(store));&#10;            server.setExecutor(null);&#10;        } catch (IOException e) {&#10;            throw new RuntimeException(&quot;Не удалось создать HTTP-сервер&quot;, e);&#10;        }&#10;    }&#10;&#10;    public void start() {&#10;        server.start();&#10;        System.out.println(&quot;Сервер запущен&quot;);&#10;    }&#10;&#10;    public void stop() {&#10;        server.stop(0);&#10;        System.out.println(&quot;Сервер остановлен&quot;);&#10;    }&#10;}&#10;```" />
+        <option name="slug" value="entity:ru.practicum.moviehub.http.MoviesServer" />
+        <option name="meta">
+          <map>
+            <entry key="fqId" value="ru.practicum.moviehub.http.MoviesServer" />
+            <entry key="tags" value="entity,summary" />
+          </map>
+        </option>
+        <option name="createdAt" value="1773068308317" />
+        <option name="updatedAt" value="1773068308317" />
+      </Item>
+      <Item>
+        <option name="id" value="SuIfwBj1Nk0m2RI5LtO0GvQKQAw" />
+        <option name="userId" value="d.v.generalov" />
+        <option name="projectId" value="fe1a3b50" />
+        <option name="scope" value="ENTITY" />
+        <option name="kind" value="ENTITY_SUMMARY" />
+        <option name="key" value="entity:ru.practicum.moviehub.http.MoviesHandler" />
+        <option name="title" value="Auto summary: ru.practicum.moviehub.http.MoviesHandler" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.google.gson.Gson;&#10;import com.google.gson.JsonElement;&#10;import com.google.gson.JsonSyntaxException;&#10;import com.sun.net.httpserver.HttpExchange;&#10;import ru.practicum.moviehub.model.Movie;&#10;import ru.practicum.moviehub.store.MoviesStore;&#10;&#10;import java.io.BufferedReader;&#10;import java.io.IOException;&#10;import java.io.InputStreamReader;&#10;import java.nio.charset.StandardCharsets;&#10;import java.time.Year;&#10;import java.util.ArrayList;&#10;import java.util.List;&#10;import java.util.Optional;&#10;&#10;public class MoviesHandler extends BaseHttpHandler {&#10;    private final MoviesStore store;&#10;    private final Gson gson = new Gson();&#10;&#10;    public MoviesHandler(MoviesStore store) {&#10;        this.store = store;&#10;    }&#10;&#10;    @Override&#10;    public void handle(HttpExchange ex) throws IOException {&#10;        String method = ex.getRequestMethod();&#10;        String path = ex.getRequestURI().getPath();&#10;&#10;        if (method.equalsIgnoreCase(&quot;GET&quot;)) {&#10;            handleGet(ex);&#10;            return;&#10;        }&#10;        if (method.equalsIgnoreCase(&quot;POST&quot;)) {&#10;            handlePost(ex);&#10;            return;&#10;        }&#10;&#10;```" />
+        <option name="slug" value="entity:ru.practicum.moviehub.http.MoviesHandler" />
+        <option name="meta">
+          <map>
+            <entry key="fqId" value="ru.practicum.moviehub.http.MoviesHandler" />
+            <entry key="tags" value="entity,summary" />
+          </map>
+        </option>
+        <option name="createdAt" value="1773230287593" />
+        <option name="updatedAt" value="1773230287593" />
+      </Item>
+      <Item>
+        <option name="id" value="Fc2IWwZweeSp4ZdXD8nKXtLCBPU" />
+        <option name="userId" value="d.v.generalov" />
+        <option name="projectId" value="fe1a3b50" />
+        <option name="scope" value="ENTITY" />
+        <option name="kind" value="ENTITY_SUMMARY" />
+        <option name="key" value="entity:MoviesApiTest" />
+        <option name="title" value="Auto summary: MoviesApiTest" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import org.junit.jupiter.api.AfterAll;&#10;import org.junit.jupiter.api.BeforeAll;&#10;import org.junit.jupiter.api.BeforeEach;&#10;import org.junit.jupiter.api.Test;&#10;&#10;import java.net.URI;&#10;import java.net.http.HttpClient;&#10;import java.net.http.HttpRequest;&#10;import java.net.http.HttpResponse;&#10;import java.nio.charset.StandardCharsets;&#10;import java.time.Duration;&#10;&#10;import static org.junit.jupiter.api.Assertions.assertEquals;&#10;import static org.junit.jupiter.api.Assertions.assertTrue;&#10;&#10;public class MoviesApiTest {&#10;    static MoviesServer server;&#10;    private static final String BASE = &quot;http://localhost:8080&quot;;&#10;    private static HttpClient client;&#10;&#10;    @BeforeAll&#10;    static void beforeAll() {&#10;        server = new MoviesServer();&#10;        server.start();&#10;        client = HttpClient.newBuilder()&#10;                .connectTimeout(Duration.ofSeconds(2))&#10;                .build();&#10;    }&#10;&#10;    @BeforeEach&#10;    void beforeEach() {&#10;&#10;    }&#10;&#10;    @AfterAll&#10;    static void afterAll() {&#10;            server.stop();&#10;        }&#10;```" />
+        <option name="slug" value="entity:MoviesApiTest" />
+        <option name="meta">
+          <map>
+            <entry key="fqId" value="MoviesApiTest" />
+            <entry key="tags" value="entity,summary" />
+          </map>
+        </option>
+        <option name="createdAt" value="1773063961363" />
+        <option name="updatedAt" value="1773063961363" />
+      </Item>
+      <Item>
+        <option name="id" value="y_7lkP1WZnbpvOI71zbbE-yz8kQ" />
+        <option name="userId" value="d.v.generalov" />
+        <option name="projectId" value="fe1a3b50" />
+        <option name="scope" value="ENTITY" />
+        <option name="kind" value="ENTITY_SUMMARY" />
+        <option name="key" value="entity:MoviesHandler" />
+        <option name="title" value="Auto summary: MoviesHandler" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.sun.net.httpserver.HttpExchange;&#10;import com.sun.net.httpserver.HttpHandler;&#10;&#10;import java.io.IOException;&#10;import java.io.OutputStream;&#10;import java.nio.charset.StandardCharsets;&#10;&#10;public class MoviesHandler implements HttpHandler {&#10;    @Override&#10;    public void handle(HttpExchange ex) throws IOException {&#10;        String method = ex.getRequestMethod();&#10;&#10;        if (!method.equalsIgnoreCase(&quot;GET&quot;)) {&#10;            sendJson(ex, 405, &quot;{\&quot;error\&quot;: \&quot;Method Not Allowed\&quot;}&quot;);&#10;            return;&#10;        }&#10;        sendJson(ex, 200, &quot;[]&quot;);&#10;    }&#10;}&#10;&#10;private void sendJson(HttpExchange ex, int status, String body) throws IOException {&#10;    byte[] bytes = body.getBytes(StandardCharsets.UTF_8);&#10;&#10;    ex.getResponseHeaders().add(&quot;Content-Type&quot;, &quot;application/json; charset=UTF-8&quot;);&#10;    ex.sendResponseHeaders(status, bytes.length);&#10;&#10;    try (OutputStream os = ex.getResponseBody()) {&#10;        os.write(bytes);&#10;    }&#10;}&#10;}&#10;&#10;```" />
+        <option name="slug" value="entity:MoviesHandler" />
+        <option name="meta">
+          <map>
+            <entry key="fqId" value="MoviesHandler" />
+            <entry key="tags" value="entity,summary" />
+          </map>
+        </option>
+        <option name="createdAt" value="1773064491146" />
+        <option name="updatedAt" value="1773064491146" />
+      </Item>
+      <Item>
+        <option name="id" value="WLxX-Xl8AZYXYJDS-Uv5hCiN6Ac" />
+        <option name="userId" value="d.v.generalov" />
+        <option name="projectId" value="fe1a3b50" />
+        <option name="scope" value="ENTITY" />
+        <option name="kind" value="ENTITY_SUMMARY" />
+        <option name="key" value="entity:ru.practicum.moviehub.http.BaseHttpHandler" />
+        <option name="title" value="Auto summary: ru.practicum.moviehub.http.BaseHttpHandler" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.google.gson.Gson;&#10;import com.sun.net.httpserver.HttpExchange;&#10;import com.sun.net.httpserver.HttpHandler;&#10;import ru.practicum.moviehub.api.ErrorResponse;&#10;&#10;import java.io.IOException;&#10;import java.io.OutputStream;&#10;import java.nio.charset.StandardCharsets;&#10;import java.util.Collections;&#10;import java.util.List;&#10;&#10;abstract class BaseHttpHandler implements HttpHandler {&#10;    protected static final String CT_JSON = &quot;application/json; charset=UTF-8&quot;;&#10;&#10;    protected void sendJson(HttpExchange ex, int status, String json) throws IOException {&#10;        byte[] bytes = json.getBytes(StandardCharsets.UTF_8);&#10;&#10;        ex.getResponseHeaders().add(&quot;Content-Type&quot;, CT_JSON);&#10;        ex.sendResponseHeaders(status, bytes.length);&#10;&#10;        try (OutputStream os = ex.getResponseBody()) {&#10;            os.write(bytes);&#10;        }&#10;    }&#10;&#10;    protected void sendNoContent(HttpExchange ex) throws IOException {&#10;        ex.getResponseHeaders().set(&quot;Content-Type&quot;, CT_JSON);&#10;        ex.sendResponseHeaders(204, -1);&#10;        ex.getResponseBody().close();&#10;    }&#10;&#10;    protected void sendError(HttpExchange ex, int status, String error, List&lt;String&gt; details) throws IOException {&#10;        ErrorResponse response = new ErrorResponse(error, details);&#10;        String json = new Gson().toJson(response);&#10;        sendJson(ex, status, json);&#10;    }&#10;&#10;    protected void sendError(HttpExchange ex, int status, String error) throws IOException {&#10;```" />
+        <option name="slug" value="entity:ru.practicum.moviehub.http.BaseHttpHandler" />
+        <option name="meta">
+          <map>
+            <entry key="fqId" value="ru.practicum.moviehub.http.BaseHttpHandler" />
+            <entry key="tags" value="entity,summary" />
+          </map>
+        </option>
+        <option name="createdAt" value="1773067036700" />
+        <option name="updatedAt" value="1773067036700" />
+      </Item>
+      <Item>
+        <option name="id" value="q0H0X2_-FvABZj-JNm-jrLcGQN4" />
+        <option name="userId" value="d.v.generalov" />
+        <option name="projectId" value="fe1a3b50" />
+        <option name="scope" value="ENTITY" />
+        <option name="kind" value="ENTITY_SUMMARY" />
+        <option name="key" value="entity:ru.practicum.moviehub.model.Movie" />
+        <option name="title" value="Auto summary: ru.practicum.moviehub.model.Movie" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.model;&#10;&#10;import java.util.Objects;&#10;&#10;public class Movie {&#10;    private int id;&#10;    private String title;&#10;    private int year;&#10;&#10;    public void setId(int id) {&#10;        this.id = id;&#10;    }&#10;&#10;    public String getTitle() {&#10;        return title;&#10;    }&#10;&#10;    public int getYear() {&#10;        return year;&#10;    }&#10;&#10;    @Override&#10;    public boolean equals(Object o) {&#10;        if (this == o) return true;&#10;        if (o == null || getClass() != o.getClass()) return false;&#10;        Movie movie = (Movie) o;&#10;        return id == movie.id;&#10;    }&#10;&#10;    @Override&#10;    public int hashCode() {&#10;        return Objects.hash(id);&#10;    }&#10;}&#10;```" />
+        <option name="slug" value="entity:ru.practicum.moviehub.model.Movie" />
+        <option name="meta">
+          <map>
+            <entry key="fqId" value="ru.practicum.moviehub.model.Movie" />
+            <entry key="tags" value="entity,summary" />
+          </map>
+        </option>
+        <option name="createdAt" value="1773073772048" />
+        <option name="updatedAt" value="1773073772048" />
+      </Item>
+      <Item>
+        <option name="id" value="3dDZgrEcA30t2ILGmaSDwsM7Wl0" />
+        <option name="userId" value="d.v.generalov" />
+        <option name="projectId" value="fe1a3b50" />
+        <option name="scope" value="ENTITY" />
+        <option name="kind" value="ENTITY_SUMMARY" />
+        <option name="key" value="entity:ru.practicum.moviehub.store.MoviesStore" />
+        <option name="title" value="Auto summary: ru.practicum.moviehub.store.MoviesStore" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.store;&#10;&#10;import ru.practicum.moviehub.model.Movie;&#10;&#10;import java.util.ArrayList;&#10;import java.util.HashMap;&#10;import java.util.List;&#10;import java.util.Map;&#10;import java.util.Optional;&#10;import java.util.concurrent.atomic.AtomicInteger;&#10;&#10;public class MoviesStore {&#10;    private final Map&lt;Integer, Movie&gt; movies = new HashMap&lt;&gt;();&#10;    private final AtomicInteger idCounter = new AtomicInteger(1);&#10;&#10;    public List&lt;Movie&gt; getAllMovies() {&#10;        return new ArrayList&lt;&gt;(movies.values());&#10;    }&#10;&#10;    public Optional&lt;Movie&gt; getMovieById(int id) {&#10;        return Optional.ofNullable(movies.get(id));&#10;    }&#10;&#10;    public List&lt;Movie&gt; getMoviesByYear(int year) {&#10;        List&lt;Movie&gt; result = new ArrayList&lt;&gt;();&#10;        for (Movie m : movies.values()) {&#10;            if (m.getYear() == year) {&#10;                result.add(m);&#10;            }&#10;        }&#10;        return result;&#10;    }&#10;&#10;    public Movie addMovie(Movie movie) {&#10;        int id = idCounter.getAndIncrement();&#10;        movie.setId(id);&#10;        movies.put(id, movie);&#10;        return movie;&#10;    }&#10;&#10;```" />
+        <option name="slug" value="entity:ru.practicum.moviehub.store.MoviesStore" />
+        <option name="meta">
+          <map>
+            <entry key="fqId" value="ru.practicum.moviehub.store.MoviesStore" />
+            <entry key="tags" value="entity,summary" />
+          </map>
+        </option>
+        <option name="createdAt" value="1773073782453" />
+        <option name="updatedAt" value="1773073782453" />
+      </Item>
+      <Item>
+        <option name="id" value="VFo3dLvB7Av-gZxwwfJPXH0aowY" />
+        <option name="userId" value="d.v.generalov" />
+        <option name="projectId" value="fe1a3b50" />
+        <option name="scope" value="ENTITY" />
+        <option name="kind" value="ENTITY_SUMMARY" />
+        <option name="key" value="entity:ru.practicum.moviehub.model.ErrorResponse" />
+        <option name="title" value="Auto summary: ru.practicum.moviehub.model.ErrorResponse" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.model;&#10;&#10;import java.util.Collections;&#10;import java.util.List;&#10;&#10;public class ErrorResponse {&#10;    private String error;&#10;    private List&lt;String&gt; details;&#10;&#10;    public ErrorResponse(String error, List&lt;String&gt; details) {&#10;        this.error = error;&#10;        this.details = details;&#10;    }&#10;&#10;    public ErrorResponse(String error) {&#10;        this.error = error;&#10;        this.details = Collections.emptyList();&#10;    }&#10;&#10;    public String getError() { return error; }&#10;    public List&lt;String&gt; getDetails() { return details; }&#10;}&#10;```" />
+        <option name="slug" value="entity:ru.practicum.moviehub.model.ErrorResponse" />
+        <option name="meta">
+          <map>
+            <entry key="fqId" value="ru.practicum.moviehub.model.ErrorResponse" />
+            <entry key="tags" value="entity,summary" />
+          </map>
+        </option>
+        <option name="createdAt" value="1773066981485" />
+        <option name="updatedAt" value="1773066981485" />
+      </Item>
+      <Item>
+        <option name="id" value="OmxXJsUFNNR--B7C84hOYqqulMs" />
+        <option name="userId" value="d.v.generalov" />
+        <option name="projectId" value="fe1a3b50" />
+        <option name="scope" value="ENTITY" />
+        <option name="kind" value="ENTITY_SUMMARY" />
+        <option name="key" value="entity:ru.practicum.moviehub.api.ErrorResponse" />
+        <option name="title" value="Auto summary: ru.practicum.moviehub.api.ErrorResponse" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.api;&#10;&#10;import java.util.List;&#10;&#10;public class ErrorResponse {&#10;    private String error;&#10;    private List&lt;String&gt; details;&#10;&#10;    public ErrorResponse(String error, List&lt;String&gt; details) {&#10;        this.error = error;&#10;        this.details = details;&#10;    }&#10;}&#10;```" />
+        <option name="slug" value="entity:ru.practicum.moviehub.api.ErrorResponse" />
+        <option name="meta">
+          <map>
+            <entry key="fqId" value="ru.practicum.moviehub.api.ErrorResponse" />
+            <entry key="tags" value="entity,summary" />
+          </map>
+        </option>
+        <option name="createdAt" value="1773073753159" />
+        <option name="updatedAt" value="1773073753159" />
+      </Item>
+      <Item>
+        <option name="id" value="_o4_GSPZI1CkwbZ3ipBvC_o8WtE" />
+        <option name="userId" value="d.v.generalov" />
+        <option name="projectId" value="fe1a3b50" />
+        <option name="scope" value="ENTITY" />
+        <option name="kind" value="ENTITY_SUMMARY" />
+        <option name="key" value="entity:ru.practicum.moviehub.http.ListOfMoviesTypeToken" />
+        <option name="title" value="Auto summary: ru.practicum.moviehub.http.ListOfMoviesTypeToken" />
+        <option name="text" value="```&#10;package ru.practicum.moviehub.http;&#10;&#10;import com.google.gson.reflect.TypeToken;&#10;import ru.practicum.moviehub.model.Movie;&#10;&#10;import java.util.List;&#10;&#10;public class ListOfMoviesTypeToken extends TypeToken&lt;List&lt;Movie&gt;&gt; {&#10;}&#10;```" />
+        <option name="slug" value="entity:ru.practicum.moviehub.http.ListOfMoviesTypeToken" />
+        <option name="meta">
+          <map>
+            <entry key="fqId" value="ru.practicum.moviehub.http.ListOfMoviesTypeToken" />
+            <entry key="tags" value="entity,summary" />
+          </map>
+        </option>
+        <option name="createdAt" value="1773074081783" />
+        <option name="updatedAt" value="1773074081783" />
+      </Item>
+    </items>
+  </component>
+</project>
